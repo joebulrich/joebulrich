@@ -12,16 +12,17 @@ body{
  line-height: 1.4;
  font-family: Allerta, san-serif;
  background: #f2f2f2;
+ box-sizing: border-box;
+ margin: 0px;
+ padding: 0;
 }
 
-h2{
-
-}
 .navbar {
+ box-sizing: border-box;
  position: fixed;
  display: flex;
  width: 100%;
- height: 20vh;
+ height: 25vh;
  justify-content: center;
  align-items: center;
  top: 0;
@@ -33,31 +34,27 @@ h2{
 }
 
 .navlist{
+ height: 90%;
+ width: 40%;
  display: flex;
- list-style-type: none;
- font-size: 2rem;
  background: #FFFFFF;
  box-border: black;
- padding: 0.5rem 0.25rem 0.5rem 0.25rem;
  border-style: ridge;
  border-width: thick;
  border-radius: .5rem;
  border-color: black;
- justify-content: center;
-}
-
-@media (max-width: 600px){
- .navlist{
-   font-size: .5rem;
- }
+ justify-content: space-around;
+ align-items: center;
 }
 
 li{
- margin: 0 .5rem 0 0.5rem;
- padding: 1rem 1rem 1rem 1rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
  border-style:  solid;
- min-width: 10rem;
- text-align: center;
+ font-size: 90%;
+ padding: 1em;
+ height: 90%;
 }
 
 li:hover{
@@ -73,6 +70,9 @@ a{
  color: black;
 }
 .welcome-section{
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
  display: flex;
  justify-content: center;
  text-align: center;
@@ -80,22 +80,20 @@ a{
  height: 100vh;
  width: 100%;
 }
-@media(max-height: 400px){
-  .welcome-section{
-    align-items: flex-end;
-  }
- }
 .projects-section{
- align-text: center;
- padding-top:9rem;
- padding-bottom: 1rem;
+ box-sizing: border-box;
+ height: 100vh;
+ width: 100vw;
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ padding-top: 25vh;
 }
 .projects-header{
  border-style: none none solid none;
  justify-content: center;
  text-align: center;
- width: 20rem;
- margin: 0 auto 3rem auto;
+ width: 100%;
 }
 .projects-grid{
  padding-top: 1rem;
