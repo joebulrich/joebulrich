@@ -27,6 +27,9 @@ main{
   padding-bottom: 1rem;
   background: #DDDDDD;
   z-index: 10;
+  max-height: 100px;
+  min-height: 60px;
+  min-width: 600px;
 }
 
 .navlist{
@@ -39,7 +42,7 @@ main{
   border-width: thick;
   border-radius: .5rem;
   border-color: black;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -51,6 +54,7 @@ li{
   font-size: 90%;
   height: 70%;
   padding: 0 1% 0 1%;
+  margin: 0 1% 0 1%
 }
 
 li:hover{
