@@ -42,7 +42,7 @@ main{
   border-width: thick;
   border-radius: .5rem;
   border-color: black;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
