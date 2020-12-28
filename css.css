@@ -27,7 +27,7 @@ main{
   padding-bottom: 1rem;
   background: #DDDDDD;
   z-index: 10;
-  max-height: 60px;
+  max-height: 100px;
   min-height: 60px;
   min-width: 600px;
 }
