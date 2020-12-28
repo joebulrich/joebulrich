@@ -27,13 +27,9 @@ main{
   padding-bottom: 1rem;
   background: #DDDDDD;
   z-index: 10;
-  max-height: 100px;
-  min-height: 60px;
-  min-width: 600px;
 }
-
-.navlist{
-  height: 90%;
+#navlist{
+  height: 100%;
   width: 40%;
   display: flex;
   background: #FFFFFF;
@@ -44,27 +40,52 @@ main{
   border-color: black;
   justify-content: space-around;
   align-items: center;
+  box-sizing: border-box;
 }
 
-li{
+.navbutton{
   display: flex;
   align-items: center;
   justify-content: center;
   border-style:  solid;
-  font-size: 90%;
+  font-size: 100%;
   height: 70%;
   padding: 0 1% 0 1%;
-  margin: 0 1% 0 1%
-}
+  width: 20%;
+  box-sizing: border-box;
 
-li:hover{
+}
+.navbutton:hover{
   background:#000000;
   }
-
-li:hover a{
+.navbutton:hover a{
   color:#FFFFFF;
   }
-
+@media only screen and (max-width: 600px), (max-height: 350px) {
+  .navbutton{
+    font-size: 70%;
+    border-width: medium;
+    height: 90%;
+  }
+  #welcome-section{
+    font-size:50%;
+  }
+  #navlist{
+    border-width: medium;
+  }
+  .navbar{
+    padding: .5rem 0 .5rem 0;
+  }
+}
+@media only screen and (min-height: 500px){
+  #navbar{
+    height: 10vh;
+    padding: .25rem 0 .25rem 0;
+  }
+  #welcome-section{
+    font-size: 150%;
+  }
+}
 a{
   text-decoration: none;
   color: black;
