@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body{
   line-height: 1.4;
   font-family: Allerta, san-serif;
@@ -92,6 +95,15 @@ main{
     font-size: 150%;
   }
 }
+@media screen and (orientation: portrait) {
+  .navbar{
+    height: 10vh;
+    padding: .5rem 0 .5rem 0;
+  }
+  #projects{
+    padding-top: 10vh;
+  }
+}
 a{
   text-decoration: none;
   color: black;
@@ -119,20 +131,22 @@ a{
 }
 .projects-header{
   display: flex;
-  border-style: none none solid none;
+  border-bottom: solid;
   justify-content: center;
   align-items: flex-end;
   text-align: center;
   width: 100%;
   font-size: 200%;
+  height:10%;
 }
 .projects-grid{
   padding-top: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   width:100%;
+  height:90%;
   justify-items: center;
-  align-content: center;
+  align-content: top;
 }
 
 .project-tile{
