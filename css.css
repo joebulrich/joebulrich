@@ -30,7 +30,7 @@ main{
 }
 #navlist{
   height: 100%;
-  width: 40%;
+  width: 60%;
   display: flex;
   background: #FFFFFF;
   box-border: black;
@@ -48,7 +48,7 @@ main{
   align-items: center;
   justify-content: center;
   border-style:  solid;
-  font-size: 100%;
+  font-size: 110%;
   height: 70%;
   padding: 0 1% 0 1%;
   width: 20%;
@@ -61,27 +61,32 @@ main{
 .navbutton:hover a{
   color:#FFFFFF;
   }
-@media only screen and (max-width: 600px), (max-height: 350px) {
+@media only screen and (max-width: 1425px),(max-height: 350px){
   .navbutton{
-    font-size: 70%;
-    border-width: medium;
-    height: 90%;
-  }
-  #welcome-section{
-    font-size:50%;
-  }
-  #navlist{
-    border-width: medium;
-  }
-  .navbar{
-    padding: .5rem 0 .5rem 0;
+    font-size: 90%;
   }
 }
-@media only screen and (min-height: 500px){
-  #navbar{
-    height: 10vh;
-    padding: .25rem 0 .25rem 0;
+@media only screen and (max-width: 1170px),(max-height: 300px){
+  .navbutton{
+    font-size: 80%;
   }
+}
+@media only screen and (max-width: 1050px),(max-height: 270px){
+  .navbutton{
+    font-size: 70%;
+  }
+}
+@media only screen and (max-width: 950px),(max-height: 250px){
+  .navbutton{
+    font-size: 60%;
+  }
+}
+@media only screen and (max-width: 805px){
+  .navbutton{
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 545px){
   #welcome-section{
     font-size: 150%;
   }
@@ -100,6 +105,7 @@ a{
   align-items: center;
   height: 100vh;
   width: 100%;
+  font-size: 200%;
 }
 .projects-section{
   box-sizing: border-box;
@@ -111,10 +117,13 @@ a{
   padding-top: 25vh;
 }
 .projects-header{
+  display: flex;
   border-style: none none solid none;
   justify-content: center;
+  align-items: flex-end;
   text-align: center;
   width: 100%;
+  font-size: 200%;
 }
 .projects-grid{
   padding-top: 1rem;
