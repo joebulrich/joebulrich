@@ -53,6 +53,7 @@ main{
   padding: 0 1% 0 1%;
   width: 20%;
   box-sizing: border-box;
+  text-align:center;
 
 }
 .navbutton:hover{
@@ -145,6 +146,7 @@ a{
   justify-content: center;
   align-items: center;
   color: rgba(0,0,0,0);
+  margin-top: .25rem;
 }
 
 .project-tile:hover{
