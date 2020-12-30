@@ -103,6 +103,13 @@ main{
   #projects{
     padding-top: 10vh;
   }
+  .projects-grid{
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    border:solid;
+  }
+  .project-tile{
+    height: 100%;
+  }
 }
 a{
   text-decoration: none;
@@ -152,7 +159,7 @@ a{
 .project-tile{
   display: flex;
   border: solid .5rem #000000;
-  border-radius: 10rem;
+  border-radius: 1rem;
   text-align: center;
   width: 10rem;
   height: 10rem;
