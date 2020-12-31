@@ -6,14 +6,13 @@ body{
   font-family: Allerta, san-serif;
   background: #f2f2f2;
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 
 main{
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 
 }
 .navbar {
@@ -74,15 +73,27 @@ main{
   .navbutton{
     font-size: 80%;
   }
+  .project-tile{
+    height: 15rem;
+    width: 15rem;
+  }
 }
 @media only screen and (max-width: 1050px),(max-height: 270px){
   .navbutton{
     font-size: 70%;
   }
+  .project-tile{
+    height: 15rem;
+    width: 15rem;
+  }
 }
 @media only screen and (max-width: 950px),(max-height: 250px){
   .navbutton{
     font-size: 60%;
+  }
+  .project-tile{
+    height: 15rem;
+    width: 15rem;
   }
 }
 @media only screen and (max-width: 805px){
@@ -102,8 +113,8 @@ a{
 }
 .welcome-section{
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -114,7 +125,7 @@ a{
 }
 .projects-section{
   box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -150,8 +161,8 @@ a{
   border: solid .5rem #000000;
   border-radius: 1rem;
   text-align: center;
-  width: 10rem;
-  height: 10rem;
+  width: 20rem;
+  height: 20rem;
   font-size: 1.1rem;
   justify-content: center;
   align-items: center;
@@ -348,5 +359,55 @@ a{
   }
   #navlist{
     width: 80%;
+  }
+}
+@media only screen and (max-width: 1425px),(max-height: 350px){
+  .navbutton{
+    font-size: 90%;
+  }
+}
+@media only screen and (max-width: 1170px),(max-height: 300px){
+  .navbutton{
+    font-size: 80%;
+  }
+  .project-tile{
+    height: 15rem;
+    width: 15rem;
+  }
+}
+@media only screen and (max-width: 1050px),(max-height: 270px){
+  .navbutton{
+    font-size: 70%;
+  }
+  .project-tile{
+    height: 15rem;
+    width: 15rem;
+  }
+}
+@media only screen and (max-width: 950px),(max-height: 250px){
+  .navbutton{
+    font-size: 60%;
+  }
+  .project-tile{
+    height: 15rem;
+    width: 15rem;
+  }
+}
+@media only screen and (max-width: 805px){
+  .navbutton{
+    font-size: 50%;
+  }
+  .project-tile{
+    height: 10rem;
+    width: 10rem;
+  }
+}
+@media only screen and (max-width: 545px){
+  #welcome-section{
+    font-size: 150%;
+  }
+  .project-tile{
+    height: 10rem;
+    width: 10rem;
   }
 }
