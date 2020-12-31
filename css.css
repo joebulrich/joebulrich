@@ -95,22 +95,7 @@ main{
     font-size: 150%;
   }
 }
-@media screen and (orientation: portrait) {
-  .navbar{
-    height: 10vh;
-    padding: .5rem 0 .5rem 0;
-  }
-  #projects{
-    padding-top: 10vh;
-  }
-  .projects-grid{
-    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
-    border:solid;
-  }
-  .project-tile{
-    height: 100%;
-  }
-}
+
 a{
   text-decoration: none;
   color: black;
@@ -130,8 +115,10 @@ a{
 .projects-section{
   box-sizing: border-box;
   width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   padding-top: 25vh;
 }
@@ -146,15 +133,18 @@ a{
   height:10%;
 }
 .projects-grid{
-  padding-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: .5rem;
+  display: flex;
   width:100%;
-  height:90%;
-  justify-items: center;
-  align-content: top;
+  height:50%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-
+#projects-gutter{
+ width: 100%;
+ height: 40%;
+}
 .project-tile{
   display: flex;
   border: solid .5rem #000000;
@@ -166,7 +156,7 @@ a{
   justify-content: center;
   align-items: center;
   color: rgba(0,0,0,0);
-  margin-top: .25rem;
+  margin: .25rem;
 }
 
 .project-tile:hover{
@@ -179,7 +169,6 @@ a{
   background-position: center;
   background-image:    url("https://drive.google.com/uc?id=1Bl_XRq1c-GyaD7pn2M4FvUZBI_Nz4oLa");
 }
-
 #tribute-page:hover{
   background-size:cover;
   backgound-position: center;
@@ -223,4 +212,141 @@ a{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#clock{
+  background-image: url( "https://drive.google.com/uc?id=1CRRreUMH4GfnFjNiMuWxffUWzIlbKxhi");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#clock:hover {
+  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url( "https://drive.google.com/uc?id=1CRRreUMH4GfnFjNiMuWxffUWzIlbKxhi");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#calculator{
+  background-image: url( "https://drive.google.com/uc?id=1vVFnbYq-oCLeNDQ8sc2bvP3b_It_DZtQ");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#calculator:hover {
+  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url( "https://drive.google.com/uc?id=1vVFnbYq-oCLeNDQ8sc2bvP3b_It_DZtQ");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#drum-machine{
+  background-image: url( "https://drive.google.com/uc?id=1wPR6giD5BUGefm9GyaZSozmsgyRxJnRQ");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#drum-machine:hover {
+  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url( "https://drive.google.com/uc?id=1wPR6giD5BUGefm9GyaZSozmsgyRxJnRQ");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#markdown-previewer{
+  background-image: url( "https://drive.google.com/uc?id=1MUlEqWBOx37knmDGlUubiAsAYmh_uF3d");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#markdown-previewer:hover {
+  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url( "https://drive.google.com/uc?id=1MUlEqWBOx37knmDGlUubiAsAYmh_uF3d");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#quote-machine{
+  background-image: url( "https://drive.google.com/uc?id=1sydrKA_FSp27OnBBlNF4v6zCtuRaZO3x");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#quote-machine:hover {
+  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url( "https://drive.google.com/uc?id=1sydrKA_FSp27OnBBlNF4v6zCtuRaZO3x");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media(hover: none) and (pointer: coarse) {
+    #tribute-page{
+      background-size:cover;
+      backgound-position: center;
+      background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url("https://drive.google.com/uc?id=1Bl_XRq1c-GyaD7pn2M4FvUZBI_Nz4oLa");
+    }
+    #babysitter-survey{
+      background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url( "https://drive.google.com/uc?id=1phEBweHMLo0CVtcZSPzBdvSKQ0DTeYeg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #disposable-cups-product-page{
+      background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url( "https://drive.google.com/uc?id=1kV7iE6NaDVltIGHRZ56Iv3QwaleHABkO");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #technical-page{
+      background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url( "https://drive.google.com/uc?id=1PClSOZEAt4uoLKETyxoM7VqgwmVxIlUL");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #clock{
+      background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url( "https://drive.google.com/uc?id=1CRRreUMH4GfnFjNiMuWxffUWzIlbKxhi");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #calculator{
+      background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url( "https://drive.google.com/uc?id=1vVFnbYq-oCLeNDQ8sc2bvP3b_It_DZtQ");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #drum-machine{
+      background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url( "https://drive.google.com/uc?id=1wPR6giD5BUGefm9GyaZSozmsgyRxJnRQ");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #markdown-previewer{
+      background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url( "https://drive.google.com/uc?id=1MUlEqWBOx37knmDGlUubiAsAYmh_uF3d");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #quote-machine{
+      background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url( "https://drive.google.com/uc?id=1sydrKA_FSp27OnBBlNF4v6zCtuRaZO3x");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .project-tile{
+      color: rgba(255,255,255,1);
+      background-image: none;
+    }
+}
+@media screen and (orientation: portrait) {
+  .navbar{
+    height: 10vh;
+    padding: .5rem 0 .5rem 0;
+  }
+  #projects{
+    padding-top: 10vh;
+  }
+  #navlist{
+    width: 80%;
+  }
 }
